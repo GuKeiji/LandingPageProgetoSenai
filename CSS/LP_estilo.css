@@ -266,7 +266,7 @@ footer span{
         position: absolute;
         top: 60px;
         left: 0;
-        background-color: black;
+        background-color: #F9003D;
         flex-direction: column;
     }
     .btn_menu {

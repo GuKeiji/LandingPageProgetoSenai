@@ -89,8 +89,9 @@
     </footer>
 
     <script>
+
+        var menu = document.getElementById("links");
         function botaoDoMenu() {
-            var menu = document.getElementById("links");
 
             if(screen.width <= 420){
                 if (menu.style.display === "flex"){
@@ -100,7 +101,11 @@
             }
             }
 
-
+        }
+        window.onresize = () => {
+            if(screen.width > 420) {
+                menu.style.display = "flex";
+            }
         }
     </script>
 </body>

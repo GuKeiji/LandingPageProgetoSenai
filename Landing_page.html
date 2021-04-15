@@ -1,6 +1,7 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
     <title>Landing-Page</title>
     <script src="https://kit.fontawesome.com/86cf3e840a.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="CSS/LP_estilo.css">
@@ -15,7 +16,7 @@
                 <a href="#info">desafios</a>
                 <a href="#endereco">endereço</a>
             </nav>
-            <a class="btn_menu" href="#" onclick="botaoDoMenu()">
+            <a class="btn_menu" href="javascript:void(0)" onclick="botaoDoMenu()">
                 <i class="fas fa-bars"></i>
             </a>
         </div>
@@ -90,11 +91,16 @@
     <script>
         function botaoDoMenu() {
             var menu = document.getElementById("links");
-            if (menu.style.display === "flex"){
+
+            if(screen.width <= 420){
+                if (menu.style.display === "flex"){
                 menu.style.display = "none";
             } else {
                 menu.style.display = "flex";
             }
+            }
+
+
         }
     </script>
 </body>

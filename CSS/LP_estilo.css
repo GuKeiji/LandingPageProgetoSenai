@@ -342,7 +342,7 @@ footer span{
         justify-content: space-evenly;
     }
     .endereco{
-        height: 800px;
+        height: 900px;
         justify-content: space-evenly;
     }
     .endereco h2{
@@ -359,7 +359,7 @@ footer span{
     .img_mapa{
         position: unset;
         width: 80vw;
-        margin-bottom: 45px;
+        margin: 45px 0;
 
     }
     footer span{
